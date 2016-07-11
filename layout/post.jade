@@ -1,0 +1,14 @@
+extends base
+
+block title
+  title= page.title + ' | ' + config.title
+
+block content
+  .post
+    h1.post-title= page.title
+    .post-content
+      != page.content
+    if theme.shareto == true
+    include _partial/post_nav
+
+    .post-meta= page.date.format('ll')
