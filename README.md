@@ -1,4 +1,4 @@
-## Install
+## Installation
 
 ```bash
 hexo init foobar.com;
