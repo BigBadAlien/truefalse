@@ -44,8 +44,9 @@ div {
             overflow: hidden;
         }
         #logo {
-            font: bold 38px/1.12 "PT Sans", sans-serif;
+            font: bold 38px/1.12 serif;
             color: #555;
+            text-decoration: none;
             span, &:hover {
                 color: #777;
             }
