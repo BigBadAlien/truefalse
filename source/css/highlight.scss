@@ -264,4 +264,15 @@
       color: #0086b3;
     }
   }
+
+  .disabled,
+  .disabled .attr,
+  .disabled .line,
+  .disabled .string,
+  .disabled .type,
+  .disabled .literal,
+  .disabled .meta,
+  .disabled .number {
+    color: #e6e6e6 !important;
+  }
 }

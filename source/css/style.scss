@@ -285,3 +285,13 @@ div {
     }
 }
 
+::selection {
+    background: #026b67;
+    color: white;
+}
+
+::-moz-selection {
+    background: #026b67;
+    color: white;
+}
+
