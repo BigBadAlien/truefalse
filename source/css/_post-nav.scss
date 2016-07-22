@@ -1,0 +1,24 @@
+.post-nav {
+  padding: 20px 0;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  &__pre,
+  &__next {
+    display: block;
+    margin: 20px 0;
+  }
+
+  &__pre {
+    float: left;
+  }
+
+  &__next {
+    float: right;
+  }
+}

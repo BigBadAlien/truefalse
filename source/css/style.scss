@@ -1,3 +1,5 @@
+@import "_post";
+@import "_post-nav";
 
 body {
     background-color: #FFF;
@@ -9,7 +11,7 @@ body {
 }
 .body_container {
     padding: 0 60px;
-    max-width: 1150px;
+    max-width: 960px;
     margin: 0 auto;
 }
 .content_container {
@@ -33,7 +35,6 @@ div {
 #header {
     padding: 58px 0 0;
     text-align: left;
-    border-bottom: 1px solid #ddd;
     position: relative;
     .site-name {
         margin-bottom: 40px;
@@ -44,7 +45,7 @@ div {
             overflow: hidden;
         }
         #logo {
-            font: bold 38px/1.12 serif;
+            font: bold 38px/1.12 sans-serif;
             color: #555;
             text-decoration: none;
             span, &:hover {
@@ -67,114 +68,6 @@ div {
     color: #888;
 }
 
-.post {
-    padding: 25px 0 15px;
-    .post-title {
-        margin: 0;
-        color: #555;
-        text-align: left;
-        font: bold 25px/1.1 "PT Sans", sans-serif;
-        a {
-            color: #555;
-        }
-    }
-    .post-meta {
-        padding: 0;
-        margin: 15px 0 0;
-        color: #6E7173;
-        float: left;
-        display: inline;
-        text-indent: .15em;
-        &:before {
-              padding-right: 0.3em;
-        }
-        .category {
-            &:before {
-              padding-right: 0.3em;
-            }
-        }
-    }
-
-    .post-content {
-        clear: left;
-        font-size: 18px;
-        line-height: 1.77;
-        color: #444;
-        padding-top: 15px;
-        text-align: justify;
-        text-justify: distribute;
-        word-break: normal;
-        h2 {
-            margin: 1.4em 0 1.1em;
-            border-bottom: 1px solid #eee;
-            overflow: hidden;
-        }
-        h3 {
-            margin: 1.4em 0 1.1em;
-        }
-        pre code {
-            padding: 0 2em;
-        }
-        p {
-            margin: 0 0 1.234em;
-            code {
-                display: inline-block;
-                margin: 0 5px;
-                padding: 0 5px;
-                background: #f7f8f8;
-            }
-            a {
-                color: #01579f;
-                padding-bottom: 2px;
-                word-break: break-all;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-            .caption {
-                color: #444;
-                display: block;
-                font-size: 0.9em;
-                margin-top: 0.1em;
-                position: relative;
-                text-align: center;
-            }
-        }
-        hr {
-            margin: 2.4em auto;
-            border: none;
-            border-top: 1px solid #eee;
-            position: relative;
-        }
-        img {
-            max-width: 100%;
-            padding: 0.5em 0;
-            display: block;
-        }
-        ul, ol {
-            border-radius: 3px;
-            margin: 1em 0;
-            ul {
-                margin: 0;
-            }
-            code {
-                display: inline-block;
-                margin: 0 5px;
-                padding: 0px 5px;
-                background: #f7f8f8;
-            }
-            a {
-                color: #01579f;
-                padding-bottom: 2px;
-                word-break: break-all;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
 .page-navigator {
     border-top: 1px solid #ddd;
     list-style: none;
@@ -195,7 +88,7 @@ div {
         text-align: center;
         &:hover {
             background: #F8F8F8;
-            border-bottom-color: #D26911;
+            border-bottom-color: #026b67;
         }
         &.prev {
             float: left;
@@ -212,7 +105,7 @@ div {
     }
     .current {
         background: #F8F8F8;
-        border-bottom-color: #D26911;
+        border-bottom-color: #026b67;
     }
     .space {
         border: none;
@@ -281,7 +174,7 @@ div {
     }
     &:hover {
         background: #F8F8F8;
-        border-bottom-color: #D26911;
+        border-bottom-color: #026b67;
     }
 }
 
@@ -295,3 +188,9 @@ div {
     color: white;
 }
 
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #cdcdcd;
+    background: transparent;
+}
