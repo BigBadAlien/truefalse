@@ -9,6 +9,6 @@ block content
     .post-content
       != page.content
     if theme.shareto == true
-
+    include _partial/tag
     .post__meta= page.date.format(config.date_format)
   include _partial/post_nav
