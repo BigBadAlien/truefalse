@@ -10,9 +10,13 @@ block content
   for post in page.posts.toArray()
     .post
       h2.post__title
-        a(href=url_for(post.path))
+        a(href=url_for(post.link || post.path))
           =post.title
-      if post.description
+      if post.description && post.link
+        .post__content
+          a(href = url_for(post.link) target="_blank")
+            != post.description
+      else if post.description
         .post__content
           != post.description
       else if post.excerpt
@@ -31,7 +35,7 @@ block content
         != ' '
 
       p(class='readmore')
-        a(href=url_for(post.path))= __('Readmore')
+        a(href=url_for(post.link || post.path) target="_blank")= __('Readmore')
       .post__meta= post.date.format(config.date_format)
 
   include _partial/paginator
